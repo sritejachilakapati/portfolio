@@ -1,101 +1,79 @@
 import Image from "next/image";
+import ProjectCard from "@/components/ProjectCard";
+import ContactForm from "@/components/ContactForm";
+import DirectContact from "@/components/DirectContact";
+import Technologies from "@/components/Technologies";
+import profilePic from "../../public/profile.jpg";
+import { TECHNOLOGIES } from "@/constants/technologies";
+// import profilePic from "../../public/profile.png";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      {/* Hero Section */}
+      <section className="flex flex-col md:flex-row md:gap-10 items-center">
+        <div className="w-full">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">
+            Hi, I'm Sriteja R Chilakapati
+          </h1>
+          <p className="text-lg text-gray-400 mb-4">
+            I'm a Senior Full Stack Developer currently working at Animall
+            Technologies. <br />I specialize in building scalable, maintainable,
+            and efficient web applications.
+          </p>
+          <p className="text-lg text-gray-400">
+            With a strong background in both front-end and back-end
+            technologies, I enjoy solving complex problems and delivering
+            high-quality software. <br />
+            Let's collaborate and create something amazing.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <Image
+          src={profilePic}
+          alt="Sriteja R Chilakapati"
+          className="hidden md:block mt-6 md:mt-0 w-96 h-96 mx-auto md:mr-0 drop-shadow-[0px_10px_8px_rgba(90,0,0,0.6)] object-contain rounded-full"
+        />
+      </section>
+
+      {/* Technologies Section */}
+      <section className="mt-10">
+        <h2 className="text-2xl md:text-4xl font-bold mb-6">
+          My Arsenal of Technologies
+        </h2>
+        <Technologies list={TECHNOLOGIES} />
+      </section>
+
+      {/* Projects Section */}
+      <section className="mt-10">
+        <h2 className="text-2xl md:text-4xl font-bold mb-6">
+          Creations & Innovations
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ProjectCard
+            title="MovieTix"
+            description="An online movie ticket booking platform built with Golang and PostgreSQL."
+            techStack={["Golang", "PostgreSQL", "Gorilla Mux"]}
+            githubLink="https://github.com/sritejachilakapati/movietix"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <ProjectCard
+            title="Election Portal"
+            description="A comprehensive election portal built with MongoDB and Node.js."
+            techStack={["Node.js", "MongoDB", "Passport.js"]}
+            githubLink="https://github.com/sritejachilakapati/Common-Election-Portal-Server"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      </section>
+
+      {/* Contact Form */}
+      <section className="mt-10">
+        <h2 className="text-2xl md:text-4xl font-bold mb-6">
+          Connect & Collaborate
+        </h2>
+        <div className="flex flex-col md:flex-row gap-8">
+          <ContactForm />
+          <DirectContact />
+        </div>
+      </section>
+    </>
   );
 }
