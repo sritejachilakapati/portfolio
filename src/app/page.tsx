@@ -31,12 +31,12 @@ export default function HomePage() {
         <Image
           src={profilePic}
           alt="Sriteja R Chilakapati"
-          className="mx-auto mt-6 hidden h-96 w-96 rounded-full object-contain drop-shadow-[0px_10px_8px_rgba(90,0,0,0.6)] md:mr-0 md:mt-0 md:block"
+          className="mx-auto mt-6 hidden h-72 w-72 rounded-full object-contain drop-shadow-[0px_10px_8px_rgba(90,0,0,0.6)] md:mr-0 md:mt-0 md:block"
         />
       </section>
 
       {/* Technologies Section */}
-      <section className="mt-10">
+      <section className="mt-24">
         <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           My Arsenal of Technologies
         </h2>
@@ -44,7 +44,7 @@ export default function HomePage() {
       </section>
 
       {/* Projects Section */}
-      <section className="mt-10">
+      <section className="mt-24">
         <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Creations & Innovations
         </h2>
@@ -65,7 +65,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Form */}
-      <section className="mt-10">
+      <section className="mt-24">
         <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Connect & Collaborate
         </h2>
