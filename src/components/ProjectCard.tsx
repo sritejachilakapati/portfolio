@@ -21,17 +21,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveDemoLink,
 }) => {
   return (
-    <div className="bg-gray-900 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-1">
-      <h3 className="text-2xl font-bold mb-2 text-white">{title}</h3>
-      <p className="text-gray-300 mb-4">{description}</p>
-      <p className="mb-4">
+    <div className="flex transform flex-col gap-2 rounded-lg bg-gray-900 p-6 shadow-lg transition-transform hover:-translate-y-1">
+      <h3 className="text-2xl font-bold text-white">{title}</h3>
+      <p className="mb-2 text-gray-300">{description}</p>
+      <p className="mb-2">
         <span className="font-semibold text-gray-200">Tech Stack: </span>
         <span className="text-gray-300">{techStack.join(", ")}</span>
       </p>
-      <div className="flex gap-4">
+      <div className="mt-auto flex gap-4">
         <Link
           href={githubLink}
-          className="text-blue-400 hover:underline flex items-center gap-2"
+          className="flex items-center gap-2 text-blue-400 hover:underline"
           passHref
           target="_blank"
         >
@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {liveDemoLink && (
           <Link
             href={liveDemoLink}
-            className="text-green-400 hover:underline flex items-center gap-2"
+            className="flex items-center gap-2 text-green-400 hover:underline"
             passHref
             target="_blank"
           >

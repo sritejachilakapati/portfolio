@@ -8,7 +8,7 @@ const Technologies: React.FC<TechnologiesProps> = ({ list }) => {
       {list.map((tech) => (
         <div
           key={tech}
-          className="font-semibold bg-gray-800 p-3 rounded-md shadow-md text-white"
+          className="rounded-md bg-gray-800 p-3 font-semibold text-white shadow-md"
         >
           {tech}
         </div>

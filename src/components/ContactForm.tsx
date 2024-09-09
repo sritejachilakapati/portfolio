@@ -11,7 +11,7 @@ const ContactForm = () => {
   });
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -23,16 +23,16 @@ const ContactForm = () => {
 
   return (
     <form
-      className="bg-gray-800 rounded-lg p-6 w-full mx-auto"
+      className="mx-auto w-full rounded-lg bg-gray-800 p-6"
       onSubmit={handleSubmit}
       autoComplete="off"
     >
       <div className="mb-4">
-        <label className="block text-gray-300 mb-2" htmlFor="name">
+        <label className="mb-2 block text-gray-300" htmlFor="name">
           Name
         </label>
         <input
-          className="w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded-lg"
+          className="w-full rounded-lg border border-gray-700 bg-gray-900 px-4 py-2 text-white"
           type="text"
           id="name"
           name="name"
@@ -41,11 +41,11 @@ const ContactForm = () => {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-300 mb-2" htmlFor="email">
+        <label className="mb-2 block text-gray-300" htmlFor="email">
           Email
         </label>
         <input
-          className="w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded-lg"
+          className="w-full rounded-lg border border-gray-700 bg-gray-900 px-4 py-2 text-white"
           type="email"
           id="email"
           name="email"
@@ -54,11 +54,11 @@ const ContactForm = () => {
         />
       </div>
       <div className="mb-6">
-        <label className="block text-gray-300 mb-2" htmlFor="message">
+        <label className="mb-2 block text-gray-300" htmlFor="message">
           Message
         </label>
         <textarea
-          className="w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded-lg resize-none"
+          className="w-full resize-none rounded-lg border border-gray-700 bg-gray-900 px-4 py-2 text-white"
           id="message"
           name="message"
           rows={4}
@@ -68,7 +68,7 @@ const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg"
+        className="w-full rounded-lg bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600"
       >
         Submit
       </button>

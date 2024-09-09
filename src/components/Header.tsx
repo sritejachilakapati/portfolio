@@ -6,7 +6,7 @@ import { HiCode } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <header className="w-full py-6 px-4 md:px-8 flex justify-between items-center">
+    <header className="flex w-full items-center justify-between px-4 py-6 md:px-8">
       <Link href="/" passHref>
         <h1 className="text-3xl font-extrabold">
           <HiCode />

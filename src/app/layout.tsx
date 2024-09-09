@@ -16,9 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.className}>
-      <body className="min-h-screen flex flex-col text-white">
+      <body className="flex min-h-screen flex-col text-white">
         <Header />
-        <main className="flex-grow w-full max-w-6xl mx-auto px-4 py-10">
+        <main className="mx-auto w-full max-w-6xl flex-grow px-4 py-10">
           {children}
         </main>
         <Footer />

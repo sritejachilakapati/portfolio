@@ -11,12 +11,12 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row md:gap-10 items-center">
+      <section className="flex flex-col items-center md:flex-row md:gap-10">
         <div className="w-full">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
+          <h1 className="mb-6 text-3xl font-bold md:text-5xl">
             Hi, I'm Sriteja R Chilakapati
           </h1>
-          <p className="text-lg text-gray-400 mb-4">
+          <p className="mb-4 text-lg text-gray-400">
             I'm a Senior Full Stack Developer currently working at Animall
             Technologies. <br />I specialize in building scalable, maintainable,
             and efficient web applications.
@@ -31,13 +31,13 @@ export default function HomePage() {
         <Image
           src={profilePic}
           alt="Sriteja R Chilakapati"
-          className="hidden md:block mt-6 md:mt-0 w-96 h-96 mx-auto md:mr-0 drop-shadow-[0px_10px_8px_rgba(90,0,0,0.6)] object-contain rounded-full"
+          className="mx-auto mt-6 hidden h-96 w-96 rounded-full object-contain drop-shadow-[0px_10px_8px_rgba(90,0,0,0.6)] md:mr-0 md:mt-0 md:block"
         />
       </section>
 
       {/* Technologies Section */}
       <section className="mt-10">
-        <h2 className="text-2xl md:text-4xl font-bold mb-6">
+        <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           My Arsenal of Technologies
         </h2>
         <Technologies list={TECHNOLOGIES} />
@@ -45,10 +45,10 @@ export default function HomePage() {
 
       {/* Projects Section */}
       <section className="mt-10">
-        <h2 className="text-2xl md:text-4xl font-bold mb-6">
+        <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Creations & Innovations
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
             title="MovieTix"
             description="An online movie ticket booking platform built with Golang and PostgreSQL."
@@ -66,10 +66,10 @@ export default function HomePage() {
 
       {/* Contact Form */}
       <section className="mt-10">
-        <h2 className="text-2xl md:text-4xl font-bold mb-6">
+        <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Connect & Collaborate
         </h2>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col gap-8 md:flex-row">
           <ContactForm />
           <DirectContact />
         </div>
