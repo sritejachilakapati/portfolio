@@ -90,7 +90,7 @@
 				<h3 class="mb-8 text-center text-lg text-dark-100">Tech Stack</h3>
 				<div class="relative w-full overflow-hidden whitespace-nowrap">
 					<div class="flex w-max items-center gap-8 pl-8" class:animate-marquee={startMarquee}>
-						{#each techStack.concat(techStack) as tech (tech.id)}
+						{#each techStack.concat(techStack) as tech, i (tech.id + i)}
 							<div
 								class="flex h-24 w-24 flex-shrink-0 flex-grow-0 basis-auto items-center justify-center rounded-xl bg-white/80 backdrop-blur-sm"
 							>
