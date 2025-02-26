@@ -35,7 +35,7 @@
 
 <section id="hero" class="relative flex min-h-screen items-center overflow-hidden pt-16">
 	<!-- Animated particles -->
-	<div id="particles-container" class="absolute inset-0 z-0" />
+	<div id="particles-container" class="absolute inset-0 z-0"></div>
 
 	<div class="container z-10 mx-auto max-w-7xl px-6">
 		{#if loaded}
@@ -75,7 +75,7 @@
 					<div class="relative h-96 w-full animate-[float_6s_ease-in-out_infinite]">
 						<div
 							class="absolute left-0 top-0 h-full w-full rounded-full bg-primary opacity-20 blur-3xl filter"
-						/>
+						></div>
 						<img
 							src="/images/hero-illustration.jpg"
 							alt="Developer Illustration"
@@ -104,10 +104,12 @@
 	</div>
 
 	<!-- Scroll down indicator -->
-	<div class="absolute bottom-8 left-1/2 flex -translate-x-1/2 transform flex-col items-center">
+	<div
+		class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 transform flex-col items-center xl:flex"
+	>
 		<span class="mb-2 text-sm text-dark-100">Scroll Down</span>
 		<div class="flex h-10 w-6 justify-center rounded-full border-2 border-dark-100">
-			<div class="mt-2 h-2 w-2 animate-bounce rounded-full bg-primary" />
+			<div class="mt-2 h-2 w-2 animate-bounce rounded-full bg-primary"></div>
 		</div>
 	</div>
 </section>

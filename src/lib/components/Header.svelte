@@ -33,7 +33,7 @@
 			<a href="/" class="relative flex items-center text-2xl font-bold">
 				<span class="text-white">sritejach</span>
 				<span class="text-primary">.dev</span>
-				<span class="absolute -bottom-1 left-0 h-1 w-8 rounded bg-primary" />
+				<span class="absolute -bottom-1 left-0 h-1 w-8 rounded bg-primary"></span>
 			</a>
 			<nav class="hidden md:block">
 				<ul class="flex gap-8">

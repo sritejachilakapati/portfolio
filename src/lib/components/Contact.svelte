@@ -53,7 +53,7 @@
 		<h2 class="mb-16 text-center text-3xl font-bold md:text-4xl">
 			<span class="relative inline-block">
 				Get In Touch
-				<span class="absolute -bottom-2 left-1/4 right-1/4 h-1 rounded bg-primary" />
+				<span class="absolute -bottom-2 left-1/4 right-1/4 h-1 rounded bg-primary"></span>
 			</span>
 		</h2>
 
@@ -168,7 +168,7 @@
 								class="w-full rounded-lg border border-white border-opacity-10 bg-dark-400 px-4 py-3 transition-colors focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary"
 								placeholder="Your Message"
 								required
-							/>
+							></textarea>
 						</div>
 
 						<button

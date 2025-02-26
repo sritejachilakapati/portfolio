@@ -75,14 +75,14 @@
 		<h2 class="mb-16 text-center text-3xl font-bold md:text-4xl">
 			<span class="relative inline-block">
 				Featured Projects
-				<span class="absolute -bottom-2 left-1/4 right-1/4 h-1 rounded bg-primary" />
+				<span class="absolute -bottom-2 left-1/4 right-1/4 h-1 rounded bg-primary"></span>
 			</span>
 		</h2>
 
 		<!-- Vertical timeline line -->
 		<div
 			class="absolute bottom-32 left-1/2 top-[18rem] z-10 hidden w-px -translate-x-1/2 transform bg-primary bg-opacity-30 md:block"
-		/>
+		></div>
 
 		{#if inView}
 			<div class="relative space-y-32">

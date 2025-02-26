@@ -99,7 +99,7 @@
 				<div class="md:w-1/2" in:fly={{ y: 50, duration: 800 }}>
 					<h2 class="relative mb-8 inline-block text-3xl font-bold md:text-4xl">
 						About Me
-						<span class="absolute -bottom-2 left-0 h-1 w-1/2 rounded bg-primary" />
+						<span class="absolute -bottom-2 left-0 h-1 w-1/2 rounded bg-primary"></span>
 					</h2>
 					<p class="mb-6 text-dark-100">
 						I'm a Senior Fullstack Engineer with a focus on frontend technologies. With 6 years of

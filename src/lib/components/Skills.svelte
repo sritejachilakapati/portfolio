@@ -68,7 +68,7 @@
 		<h2 class="mb-16 text-center text-3xl font-bold md:text-4xl">
 			<span class="relative inline-block">
 				My Skills
-				<span class="absolute -bottom-2 left-1/4 right-1/4 h-1 rounded bg-primary" />
+				<span class="absolute -bottom-2 left-1/4 right-1/4 h-1 rounded bg-primary"></span>
 			</span>
 		</h2>
 
