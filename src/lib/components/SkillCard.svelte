@@ -39,7 +39,7 @@
 		<h3 class="text-xl font-bold">{title}</h3>
 	</div>
 	<div class="space-y-4">
-		{#each skills as skill}
+		{#each skills as skill (skill.id)}
 			<div>
 				<div class="mb-1 flex justify-between">
 					<span>{skill.name}</span>

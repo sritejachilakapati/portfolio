@@ -1,5 +1,5 @@
 <script>
-	import { GithubIcon, ExternalLinkIcon, EyeIcon } from './icons';
+	import { GithubIcon, EyeIcon } from './icons';
 
 	export let project = {
 		title: '',
@@ -92,7 +92,7 @@
 
 			<!-- Tags -->
 			<div class="mb-6 flex flex-wrap gap-2 {index % 2 === 1 ? 'md:justify-end' : ''}">
-				{#each project.tags as tag}
+				{#each project.tags as tag (tag)}
 					<span class="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">{tag}</span>
 				{/each}
 			</div>

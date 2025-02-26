@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fade, fly } from 'svelte/transition';
-	import { GithubIcon } from './icons';
+	import { fly } from 'svelte/transition';
 	import ProjectCard from './ProjectCard.svelte';
 
 	let inView = false;
@@ -91,7 +90,7 @@
 					* Some project images are visualizations of concepts. These are either in-progress or
 					backend-only projects
 				</div>
-				{#each projects as project, i}
+				{#each projects as project, i (project.title)}
 					<div class="relative" in:fly={{ y: 50, duration: 800, delay: i * 200 }}>
 						<!-- Project card -->
 						<ProjectCard {project} index={i} />

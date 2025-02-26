@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import { MailIcon, LocationIcon, GithubIcon, LinkedinIcon, ArrowRightIcon } from './icons';
 
 	let inView = false;

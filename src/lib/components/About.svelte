@@ -149,7 +149,7 @@
 								Experience
 							</div>
 							<div class="space-y-6">
-								{#each experiences as experience}
+								{#each experiences as experience (experience.title)}
 									<div>
 										<div class="mb-2 flex items-start justify-between">
 											<div>
@@ -174,7 +174,7 @@
 								Education
 							</div>
 							<div class="space-y-6">
-								{#each education as edu}
+								{#each education as edu (edu.degree)}
 									<div>
 										<div class="mb-2 flex items-start justify-between">
 											<div>
