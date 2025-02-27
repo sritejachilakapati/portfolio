@@ -11,7 +11,7 @@
 			title: 'MovieTix',
 			description:
 				'An online movie ticket booking platform with a Golang backend and a Next.js frontend. Supports real-time seat selection, OAuth 2.0 authentication, and PostgreSQL for transaction management.',
-			image: '/images/projects/movietix.jpg',
+			image: '/images/projects/empty-theater.jpg',
 			githubUrl: 'https://github.com/sritejachilakapati/movietix',
 			demoUrl: null, // Hasn't been deployed yet
 			tags: ['Next.js', 'Golang', 'PostgreSQL', 'OAuth 2.0'],
@@ -21,7 +21,7 @@
 			title: 'Common Election Portal - Backend',
 			description:
 				'Developed a robust election management backend enabling user registration, candidate nominations, and secure voting. Built with MongoDB, utilizing complex aggregation pipelines for analytics and authentication secured via Passport and JWT.',
-			image: '/images/projects/cep.jpg',
+			image: '/images/projects/cep-ballot.jpg',
 			githubUrl: 'https://github.com/sritejachilakapati/Common-Election-Portal-Server',
 			demoUrl: null, // No demo for backend
 			tags: ['MongoDB', 'Passport', 'JWT'],

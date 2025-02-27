@@ -114,8 +114,8 @@
 					</p>
 
 					<p class="mb-8 text-dark-100">
-						When I'm not coding, you can find me exploring new technologies, contributing to
-						open-source projects, or sharing knowledge through technical articles and mentoring.
+						When I'm not coding, you can find me exploring new technologies, or sharing knowledge
+						through technical articles and mentoring.
 					</p>
 
 					<div class="flex gap-4">
